@@ -317,20 +317,20 @@ regression_OLS.summary()
 
 
 ## Visualización de resultados con el Entrenamiento
-plt.scatter(X_train, y_train, color = "red")
-plt.plot(X_train, regression.predict(X_train), color = "blue")
-plt.title("Sueldo vs. Años de Experiencia (Conjunto de entrenamiento)")
-plt.xlabel("Años de Experiencia")
-plt.ylabel("Sueldo ($)")
-plt.show()
+#plt.scatter(X_train, y_train, color = "red")
+#plt.plot(X_train, regression.predict(X_train), color = "blue")
+#plt.title("Sueldo vs. Años de Experiencia (Conjunto de entrenamiento)")
+#plt.xlabel("Años de Experiencia")
+#plt.ylabel("Sueldo ($)")
+#plt.show()
 
 ## Visualización de resultados con el test
-plt.scatter(X_test, y_test, color = "red")
-plt.plot(X_test, regression.predict(X_test), color = "blue")
-plt.title("Sueldo vs. Años de Experiencia (Conjunto de test)")
-plt.xlabel("Años de Experiencia")
-plt.ylabel("Sueldo ($)")
-plt.show()
+#plt.scatter(X_test, y_test, color = "red")
+#plt.plot(X_test, regression.predict(X_test), color = "blue")
+#plt.title("Sueldo vs. Años de Experiencia (Conjunto de test)")
+#plt.xlabel("Años de Experiencia")
+#plt.ylabel("Sueldo ($)")
+#plt.show()
 
 
 
@@ -347,11 +347,11 @@ plt.show()
 
 
 
-''' MODELO DE REGRESION '''
+''' Regresion lineal '''
 ### Creación del modelo de regresión lineal con los datos de entrenamiento
 from sklearn.linear_model import LinearRegression
 regression = LinearRegression()
-regression.fit(X_train, y_train)  ## Importante tener el nmismo número de filas y aprendió lo que tenía como dato de entrenamiento
+regression.fit(X_train, y_train)  ## Importante tener el mismo número de filas y aprendió lo que tenía como dato de entrenamiento
 
 ### Predecir el modelo y probarlo con test
 y_pred = regression.predict(X_test)
