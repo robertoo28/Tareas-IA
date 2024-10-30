@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Oct  2 18:14:30 2024
 
-@author: Javier Gómez R.
 
 SIMPLE LINEAR REGRESSION
 """
